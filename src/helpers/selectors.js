@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export function getAppointmentsForDay(state, dayName) {
+export default function getAppointmentsForDay(state, dayName) {
   
   if (state.days.length === 0) return [];
   
