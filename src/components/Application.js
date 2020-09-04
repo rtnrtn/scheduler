@@ -47,6 +47,26 @@ export default function Application(props) {
 
   };
 
+  function cancelInterview(id) {
+
+    const appointment = {
+      ...state.appointments[id],
+      interview: null
+    };
+
+    const appointments = {
+      ...state.appointments,
+      [id]: appointment
+    };
+
+    return Promise.all([
+      axios.delete(`/api/appointments/${appointment.id}`, { interview: null })
+    ]).then((all) => {
+      setState({ ...state, appointments });
+    });
+
+  };
+
   return (
     <main className="layout">
       <section className="sidebar">
@@ -79,6 +99,7 @@ export default function Application(props) {
             interview={interview}
             interviewers={interviewers}
             bookInterview={bookInterview}
+            cancelInterview={cancelInterview}
           />
         })}
       </section>
