@@ -31,3 +31,17 @@ export function getInterview(state, appointmentInterviewObject) {
   return interviewDetails;
 
 };
+
+export function getInterviewersForDay(state, dayName) {
+
+  const appointments = getAppointmentsForDay(state, dayName);
+
+  const interviewers = appointments
+    .map(appointment => appointment.interview)
+    .filter(interview => interview)
+    .map(interview => interview.interviewer)
+    .map(interviewer => state.interviewers[interviewer]);
+
+  return interviewers;
+  
+};
