@@ -32,11 +32,15 @@ export default function useApplicationData(props) {
       ...state.appointments,
       [id]: appointment
     };
+    
+    const indexOfDayToUpdate = state.days.findIndex(currentDay => currentDay.name === state.day);
+    const days = [...state.days];
+    days[indexOfDayToUpdate].spots--;
 
     return Promise.all([
       axios.put(`/api/appointments/${appointment.id}`, { interview })
     ]).then((all) => {
-      setState({ ...state, appointments });
+      setState({ ...state, appointments, days });
     });
 
   };
@@ -53,10 +57,14 @@ export default function useApplicationData(props) {
       [id]: appointment
     };
 
+    const indexOfDayToUpdate = state.days.findIndex(currentDay => currentDay.name === state.day);
+    const days = [...state.days];
+    days[indexOfDayToUpdate].spots++;
+
     return Promise.all([
       axios.delete(`/api/appointments/${appointment.id}`, { interview: null })
     ]).then((all) => {
-      setState({ ...state, appointments });
+      setState({ ...state, appointments, days });
     });
 
   };
