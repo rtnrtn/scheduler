@@ -57,12 +57,10 @@ export default function Application(props) {
       <section className="schedule">
         <section className="schedule">
           {appointments}
-          {/* {appointments.length > 0 &&  */}
           <Appointment 
             key="last" 
             time="5pm" 
           />
-          {/* } */}
         </section>
       </section>
     </main>

@@ -101,6 +101,7 @@ export default function Appointment(props) {
         <Confirm 
           message="Are you sure you would like to delete?"
           onConfirm={deleteAppt}
+          onCancel={back}
         />
       )}
     </article>
