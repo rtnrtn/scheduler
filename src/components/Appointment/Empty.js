@@ -1,5 +1,6 @@
 import React from "react";
 
+// Empty view of the Appointment component, i.e. no appointment is booked.
 export default function Empty(props) {
 
   return (
@@ -12,4 +13,4 @@ export default function Empty(props) {
       />
     </main>
   );
-}
+};

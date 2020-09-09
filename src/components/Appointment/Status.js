@@ -1,5 +1,6 @@
 import React from "react";
 
+// Status view of the Appointment component, i.e. shows "Saving" or "Deleting" when user saves or deletes/cancels an appointment.
 export default function Status(props) {
 
   return (
@@ -12,4 +13,4 @@ export default function Status(props) {
       <h1 className="text--semi-bold">{props.message}</h1>
     </main>
   );
-}
+};

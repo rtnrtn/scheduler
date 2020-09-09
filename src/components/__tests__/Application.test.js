@@ -11,7 +11,6 @@ afterEach(cleanup);
 describe("Application", () => {
   it("defaults to Monday and changes the schedule when a new day is selected", () => {
     const { getByText } = render(<Application />);
-
     return waitForElement(() => getByText("Monday")).then(() => {
       fireEvent.click(getByText("Tuesday"));
       expect(getByText("Leopold Silvers")).toBeInTheDocument();
@@ -102,5 +101,4 @@ describe("Application", () => {
     expect(getByText(appointment, "Deleting")).toBeInTheDocument();
     await waitForElement(() => getByText(appointment, "Could not cancel appointment."));
   });
-
 });

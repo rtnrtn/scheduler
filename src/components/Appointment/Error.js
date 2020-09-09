@@ -1,5 +1,6 @@
 import React from "react";
 
+// Error message within the Appointment component that displays appropriate message related to error occurring when user tries to save or delete/cancel an appointment unsuccessfully. 
 export default function Error(props) {
 
   return (

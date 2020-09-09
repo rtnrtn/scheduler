@@ -2,6 +2,7 @@ import React from "react";
 
 import Button from "../Button";
 
+// Confirmation prompt in the Appointment component when user tries to delete/cancel appointment. 
 export default function Confirm(props) {
 
   return (
@@ -17,4 +18,4 @@ export default function Confirm(props) {
       </section>
     </main>
   );
-}
+};

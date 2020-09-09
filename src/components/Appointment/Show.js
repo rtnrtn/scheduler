@@ -1,5 +1,6 @@
 import React from "react";
 
+// Show view of the Appointment component, i.e. appointment is booked, show details of the appointment.
 export default function Show(props) {
 
   return (
@@ -29,4 +30,4 @@ export default function Show(props) {
       </section>
     </main>
   );
-}
+};

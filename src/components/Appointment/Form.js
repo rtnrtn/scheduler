@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import InterviewerList from "../InterviewerList";
 import Button from "../Button";
 
+// Form within the Appointment component: validates student name has been entered.
 export default function Form(props) {
 
   const [name, setName] = useState(props.name || "");
@@ -62,4 +63,4 @@ export default function Form(props) {
       </section>
     </main>
   )
-}
+};
