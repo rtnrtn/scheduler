@@ -6,14 +6,29 @@ Data is persisted by the API server using a PostgreSQL database. The client appl
 
 ## Final Product
 
-!["Main page with Monday selected as default."]()
-!["Adding a new appointment."]()
-!["New appointment details before saving."]()
-!["Saving new appointment."]()
-!["New appointment saved in list of appointments."]()
-!["Editing appointment by selecting different interviewer."]()
-!["Edited appointment saved in list of appointments."]()
-!["Deleting appointment."]()
+### Main page with Monday selected as default.
+!["Main page with Monday selected as default."](https://github.com/rtnrtn/scheduler/blob/master/docs/main.png?raw=true)
+
+### Adding a new appointment. 
+!["Adding a new appointment."](https://github.com/rtnrtn/scheduler/blob/master/docs/add-appointment.png?raw=true)
+
+### New appointment details before saving. 
+!["New appointment details before saving."](https://github.com/rtnrtn/scheduler/blob/master/docs/add-appointment-filled-out.png?raw=true)
+
+### Saving new appointment. 
+!["Saving new appointment."](https://github.com/rtnrtn/scheduler/blob/master/docs/saving-appointment.png?raw=true)
+
+### New appointment saved in list of appointments. 
+!["New appointment saved in list of appointments."](https://github.com/rtnrtn/scheduler/blob/master/docs/added-appointment.png?raw=true)
+
+### Editing appointment by selecting different interviewer.
+!["Editing appointment by selecting different interviewer."](https://github.com/rtnrtn/scheduler/blob/master/docs/edit-appointment.png?raw=true)
+
+### Edited appointment saved in list of appointments.
+!["Edited appointment saved in list of appointments."](https://github.com/rtnrtn/scheduler/blob/master/docs/edited-appointment.png?raw=true)
+
+### Deleting appointment.
+!["Deleting appointment."](https://github.com/rtnrtn/scheduler/blob/master/docs/deleting-appointment.png?raw=true)
 
 ## Getting Started
 
